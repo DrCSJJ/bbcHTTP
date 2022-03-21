@@ -49,6 +49,12 @@ public class Main {
                     System.out.println("  \"Content-length\": \"" + contentLength + "\",");
                     System.out.println("}");
                     Thread.sleep(500);
+                } catch (IOException e) {
+                    url = "";
+                    System.out.println("Please enter a correct URL");                           //Catch errors that occur in the fetching of website data
+                } catch (InterruptedException e) {
+                    url = "";
+                    System.out.println("Please enter a correct URL");
                 } catch (IllegalArgumentException e) {
                     url = "";
                     System.out.println("Please enter a correct URL");
