@@ -50,12 +50,15 @@ public class Main {
                     System.out.println("}");
                     Thread.sleep(500);
                 } catch (IOException e) {
+                    System.out.println("the following URL does not connect :"+url);
                     url = "";
                     System.out.println("This site cannot be reached, please enter a correct URL");                           //Catch errors that occur in the fetching of website data
                 } catch (InterruptedException e) {
+                    System.out.println("the following URL does not connect :"+url);
                     url = "";
                     System.out.println("This site cannot be reached, please enter a correct URL");
                 } catch (IllegalArgumentException e) {
+                    System.out.println("the following URL does not connect :"+url);
                     url = "";
                     System.out.println("This site cannot be reached, please enter a correct URL");
                 }
