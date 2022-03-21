@@ -24,11 +24,7 @@ public class Main {
                     url = "";
                     System.out.println("Please enter a correct URL");
                 }
-            } else {
-                url = "";
-                System.out.println("Please enter a correct URL");
             }
-
             if (url.equals("END")) {                                                              //Exit Program IF
                 System.exit(0);
             } else if (url != "") {
